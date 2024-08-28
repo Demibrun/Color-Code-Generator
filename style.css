@@ -1,47 +1,37 @@
 body {
     font-family: Arial, sans-serif;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f0f0f0;
+    text-align: center;
 }
 h1 {
-    text-align: center;
     color: #333;
 }
-select, input, button {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
+label, select, input, button {
+    margin: 10px;
     font-size: 16px;
-}
-
-input:focus, select:focus{
-    border: none;
-    outline: 1px dotted #45a049;
 }
 button {
     background-color: #4CAF50;
-        color: #fff;
-        border: none;
-        
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        transition: background-color 0.3s ease;
-}
-button:hover {
-    background-color: #45a049;
-}
-button:active{
-background-color: #95151b;
-}
-#pin {
-    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
     text-align: center;
-    margin: 20px 0;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #45a049;
+    }
+    
+button:active{
+    background-color: #95151b;
+    }
+#result {
+    margin-top: 20px;
 }
