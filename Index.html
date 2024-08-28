@@ -3,36 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recharge Card Generator & Loader</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Color Code generator</title>
     <link rel="icon" href="favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
-    <h1>Recharge Card</h1>
-    <select id="provider">
-        <option value=""> choose provider </option>
-        <option value="mtn"> mtn </option>
-        <option value="glo"> glo </option>
-        <option value="airtel"> airtel </option>
-        <option value="9mobile"> 9mobile </option>
+    <h1>Color Code Generator</h1>
+    <label for="colorType">Color Type:</label>
+    <select id="colorType">
+        <option value="hexa">Hexadecimal</option>
+        <option value="rgb">RGB</option>
     </select>
-
-    <select id="amount">
-        <option value=""> choose amount </option>
-        <option value="100"> 100 </option>
-        <option value="200"> 200 </option>
-        <option value="500"> 500 </option>
-        <option value="1000"> 1000 </option>
-    </select>
-
-    <p id="pin"> </p>
-    <button onclick="generetePin()"> Generate Pin </button>
-
-    <input type="text" id="loadInput" placeholder="*310*pin#">
-    <button onclick="loadCard()"> Load Card </button>
+    <br><br>
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" min="1" value="1">
+    <br><br>
+    <button onclick="generateAndDisplayColors()">Generate Colors</button>
+    <br><br>
+    <div id="result"></div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
